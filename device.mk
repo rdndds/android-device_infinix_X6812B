@@ -226,7 +226,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libutils-v32
-    
+
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 
@@ -258,6 +258,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
+PRODUCT_PACKAGES += \
+    libshim_sensors \
+    libsensorndkbridge
+    
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
