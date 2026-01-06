@@ -1238,3 +1238,5 @@ vendor/lib64/libst_sr_models.so
 
 vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib/libpowerhalwrap_vendor.so
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so:MODULE_SUFFIX=-vendorcompat
+vendor/lib/libprotobuf-cpp-lite-3.9.1.so:MODULE_SUFFIX=-vendorcompat
