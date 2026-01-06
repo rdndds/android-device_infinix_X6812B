@@ -33,6 +33,7 @@ vendor/lib64/lib_iir.so
 vendor/lib/lib_speech_enh.so
 vendor/lib64/lib_speech_enh.so
 vendor/lib64/libMtkSpeechEnh.so
+vendor/lib/libMtkSpeechEnh.so
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib/libaudiocomponentengine_vendor.so
@@ -314,6 +315,7 @@ vendor/bin/libccu_s5kjn1_mipi_raw.dm
 vendor/bin/libccu_s5kjn1_mipi_raw.pm
 vendor/etc/init/camerahalserver.rc
 vendor/lib/libcam.halsensor.hwintegration.so
+vendor/lib64/libcam.halsensor.so
 vendor/lib/libmtk_drvb.so
 vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
@@ -382,7 +384,6 @@ vendor/lib64/libfeature_eis.so
 vendor/lib64/libfeature_fsc.so
 vendor/lib64/libfeature_lmv.so
 vendor/lib64/libfeature_rss.so
-vendor/lib64/libfeature.utils.so
 vendor/lib64/libfeatureiodrv_mem.so
 vendor/lib64/libfft_vendor.so
 vendor/lib64/libifcutils_mtk.so
@@ -443,6 +444,7 @@ vendor/lib64/libmtkcam_pipelinemodel_session.so
 vendor/lib64/libmtkcam_pipelinemodel_utils.so
 vendor/lib64/libmtkcam_pipelinemodel_zsl.so
 vendor/lib64/libmtkcam_pipeline.so
+vendor/lib64/libcam.feature_utils.so
 vendor/lib64/libmtkcam_prerelease.so
 vendor/lib64/libmtkcam_rsc.so
 vendor/lib64/libmtkcam_scenariorecorder.so
@@ -451,7 +453,7 @@ vendor/lib64/libmtkcam_synchelper.so
 vendor/lib64/libmtkcam_sysutils.so
 vendor/lib64/libmtkcam_tuning_utils.so
 vendor/lib64/libmtkcam_ulog.so
-vendor/lib64/libmtisp_metadata.so
+vendor/lib64/libmtkisp_metadata.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/librmsclib1.so
@@ -871,7 +873,6 @@ vendor/lib/libipsec_ims_shr.so
 vendor/lib64/libipsec_ims_shr.so
 vendor/lib/libmnetlink_v104.so
 vendor/lib64/libmnetlink_v104.so
-vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtcloader.so
 vendor/lib64/libmtcloader.so
 vendor/lib/libmtklimiter_vendor.so
@@ -1077,7 +1078,7 @@ vendor/lib/libmtkares.so
 vendor/lib64/libmtkares.so
 vendor/lib/libmtkcutils.so
 vendor/lib64/libmtkcutils.so
-vendor/lib/libmtkconfigutils.so
+vendor/lib64/libmtkconfigutils.so
 vendor/lib/libmtkhardware_legacy.so
 vendor/lib64/libmtkhardware_legacy.so
 vendor/lib/libmtknetutils.so
@@ -1138,7 +1139,6 @@ vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 vendor/lib64/lib_bsscore.so
 vendor/lib64/libsensor_custom.so
-vendor/lib64/libarcsoft_low_light_shot.so
 
 # Thermal
 vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
@@ -1229,7 +1229,6 @@ vendor/etc/init/bootperf.rc
 vendor/etc/MNL_Config.xml
 vendor/etc/factory.ini
 vendor/etc/fstb.cfg
-vendor/bin/meta_tst
 vendor/bin/mnld
 vendor/lib/libtranlog.so
 vendor/lib64/libtranlog.so
