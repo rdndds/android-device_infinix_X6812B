@@ -1235,3 +1235,6 @@ vendor/lib64/libtranlog.so
 vendor/lib64/libanc_dc_base.so
 vendor/lib64/libsdk_sr.so
 vendor/lib64/libst_sr_models.so
+
+vendor/lib64/libpowerhalwrap_vendor.so
+vendor/lib/libpowerhalwrap_vendor.so
