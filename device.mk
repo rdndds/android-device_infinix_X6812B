@@ -224,6 +224,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PowerOffAlarm
 
+PRODUCT_PACKAGES += \
+    libutils-v32
+    
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 

@@ -1205,31 +1205,23 @@ vendor/app/mcRegistry/98fb95bcb4bf42d26473eae48690d7ea.tabin
 vendor/app/mcRegistry/df1edda8627911e980ae507b9d9a7e7d.tabin
 
 # WiFi
-vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
 vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
-vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init.wmt_drv.rc
 vendor/etc/init/wlan_assistant.rc
-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 vendor/lib64/libwifitest.so
-vendor/lib64/libwpa_client.so
-vendor/lib/libwpa_client.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.2.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
 
 # Misc
 vendor/etc/init/bootperf.rc
 vendor/etc/MNL_Config.xml
 vendor/etc/factory.ini
 vendor/etc/fstb.cfg
-vendor/bin/mnld
 vendor/lib/libtranlog.so
 vendor/lib64/libtranlog.so
 vendor/lib64/libanc_dc_base.so
