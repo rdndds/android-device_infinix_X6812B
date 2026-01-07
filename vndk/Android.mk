@@ -1,3 +1,5 @@
+LOCAL_PATH := prebuilts/vndk
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := libutils-v32
 LOCAL_MULTILIB := both

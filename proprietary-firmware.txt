@@ -1,9 +1,0 @@
-gz.img;AB
-lk.img;AB
-logo.bin:logo.img;AB
-md1img.img;AB
-preloader_X6812B.bin:preloader_raw.img;AB
-scp.img;AB
-spmfw.img;AB
-sspm.img;AB
-tee.img;AB

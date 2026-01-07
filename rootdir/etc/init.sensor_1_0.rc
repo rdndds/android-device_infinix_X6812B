@@ -5,9 +5,9 @@ on post-fs-data
     # Sensor
     chmod 0660 /dev/hwmsensor
     chmod 0660 /dev/msensor
-    chmod 0660 /dev/gsensor
-    chmod 0660 /dev/als_ps
-    chmod 0660 /dev/gyroscope
+    chmod 0666 /dev/gsensor
+    chmod 0666 /dev/als_ps
+    chmod 0666 /dev/gyroscope
     chmod 0660 /dev/aal_als
     chmod 0660 /dev/humidity
     chmod 0660 /dev/barometer
@@ -29,9 +29,9 @@ on post-fs-data
 
     chown system system /dev/hwmsensor
     chown system system /dev/msensor
-    chown radio system /dev/gsensor
+    chown system system /dev/gsensor
     chown radio system /dev/als_ps
-    chown radio system /dev/gyroscope
+    chown system system /dev/gyroscope
     chown system system /dev/aal_als
     chown system system /dev/humidity
     chown system system /dev/barometer
@@ -95,21 +95,27 @@ on post-fs-data
     chmod 0660 /sys/class/sensor/m_als_misc/alsbatch
     chmod 0660 /sys/class/sensor/m_als_misc/alsflush
     chmod 0660 /sys/class/sensor/m_als_misc/alscali
+    chmod 0660 /sys/class/sensor/m_als_misc/screen_info
     chmod 0660 /sys/class/sensor/m_ps_misc/psactive
     chmod 0660 /sys/class/sensor/m_ps_misc/psdelay
     chmod 0660 /sys/class/sensor/m_ps_misc/psbatch
     chmod 0660 /sys/class/sensor/m_ps_misc/psflush
     chmod 0660 /sys/class/sensor/m_ps_misc/pscali
+	chmod 0777 /sys/class/sensor/m_ps_misc/update_cali_data
+	chmod 0660 /sys/class/sensor/m_ps_misc/pscali_sec
     chown system system /sys/class/sensor/m_als_misc/alsactive
     chown system system /sys/class/sensor/m_als_misc/alsdelay
     chown system system /sys/class/sensor/m_als_misc/alsbatch
     chown system system /sys/class/sensor/m_als_misc/alsflush
     chown system system /sys/class/sensor/m_als_misc/alscali
+    chown system system /sys/class/sensor/m_als_misc/screen_info
     chown system system /sys/class/sensor/m_ps_misc/psactive
     chown system system /sys/class/sensor/m_ps_misc/psdelay
     chown system system /sys/class/sensor/m_ps_misc/psbatch
     chown system system /sys/class/sensor/m_ps_misc/psflush
     chown system system /sys/class/sensor/m_ps_misc/pscali
+	chown system system /sys/class/sensor/m_ps_misc/update_cali_data
+	chown system system /sys/class/sensor/m_ps_misc/pscali_sec
 
     chmod 0660 /sys/class/sensor/m_baro_misc/baroenablenodata
     chmod 0660 /sys/class/sensor/m_baro_misc/baroactive
@@ -149,12 +155,10 @@ on post-fs-data
     chmod 0660 /sys/class/sensor/m_situ_misc/situdelay
     chmod 0660 /sys/class/sensor/m_situ_misc/situbatch
     chmod 0660 /sys/class/sensor/m_situ_misc/situflush
-    chmod 0660 /sys/class/sensor/m_situ_misc/sarstep
     chown system system /sys/class/sensor/m_situ_misc/situactive
     chown system system /sys/class/sensor/m_situ_misc/situdelay
     chown system system /sys/class/sensor/m_situ_misc/situbatch
     chown system system /sys/class/sensor/m_situ_misc/situflush
-    chown system system /sys/class/sensor/m_situ_misc/sarstep
 
     chmod 0660 /sys/class/sensor/m_act_misc/actactive
     chmod 0660 /sys/class/sensor/m_act_misc/actdelay

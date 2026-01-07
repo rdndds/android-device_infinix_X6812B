@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2023 The LineageOS Project
+// Copyright (C) 2022 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -8,13 +8,11 @@ prebuilt_etc {
     name: "fstab.mt6768",
     src: "etc/fstab.mt6768",
     vendor: true,
-    ramdisk_available: true,
 }
 
 prebuilt_etc {
-    name: "init.mt6768.power.rc",
-    src: "etc/init.mt6768.power.rc",
-    sub_dir: "init/hw",
+    name: "init.ago.rc",
+    src: "etc/init.ago.rc",
     vendor: true,
 }
 
@@ -47,13 +45,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.project.rc",
-    src: "etc/init.project.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.sensor_1_0.rc",
     src: "etc/init.sensor_1_0.rc",
     sub_dir: "init/hw",
@@ -61,8 +52,15 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "ueventd.mt6768.rc",
+    name: "init.target.rc",
+    src: "etc/init.target.rc",
+    sub_dir: "init",
+    system_ext_specific: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.mtk.rc",
     filename: "ueventd.rc",
-    src: "etc/ueventd.mt6768.rc",
+    src: "etc/ueventd.mtk.rc",
     vendor: true,
 }
