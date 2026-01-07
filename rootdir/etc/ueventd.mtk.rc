@@ -46,7 +46,9 @@
 /dev/fw_log_wifi          0660   wifi     wifi
 
 # FMRadio
-/dev/fm                   0666   system     system
+#TCD:add XLJLHLJYR-21 for dev/fm by shouhui.li 20200810 start
+/dev/fm                   0666   media     media
+#TCD:add XLJLHLJYR-21 for dev/fm by shouhui.li 20200810 end
 
 # NFC
 /dev/st21nfc              0660   nfc        radio
@@ -131,13 +133,6 @@
 #touch
 /dev/touch                0660   root       system
 /dev/hotknot              0660   root       system
-
-#FPC fingerprint ufs
-/sys/bus/platform/devices/fingerprint  clk_enable 0660 system system
-/sys/bus/platform/devices/fingerprint  irq 0600 system system
-/sys/bus/platform/devices/fingerprint  hw_reset 0200 system system
-/sys/bus/platform/devices/fingerprint wakeup_enable 0600 system system
-/sys/bus/platform/devices/fingerprint  fingerdown_wait 0600 system system
 
 #hang_detect
 /dev/RT_Monitor           0660   system     system
