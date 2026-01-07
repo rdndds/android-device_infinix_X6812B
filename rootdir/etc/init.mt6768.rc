@@ -485,10 +485,6 @@ on post-fs-data
     chmod 0660 /dev/sec
     chown root system /dev/sec
 
-    # FM Radio device node
-    chmod 0666 /dev/fm
-    chown system system /dev/fm
-
     # device apc settings
 
     # device info /proc interface
@@ -514,9 +510,6 @@ on post-fs-data
 
     #ITO
     chmod 0777 /data/local/tmp
-
-    #FM
-    chmod 0777 /sys/class/fm/fm/lan_enable
 
     #Charge
     chmod 0777 /sys/class/power_supply/usb/reverse_chg_otg

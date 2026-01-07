@@ -113,7 +113,6 @@ vendor/lib/libaudiocomponentengine_vendor.so
 vendor/lib/libaudiocomponentenginec.so
 vendor/lib/libaudiocustparam_vendor.so
 vendor/lib/libaudiodcrflt_vendor.so
-vendor/lib/libaudiofmtconv.so
 vendor/lib/libaudioloudc.so
 vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiotoolkit_vendor.so
@@ -140,7 +139,6 @@ vendor/lib64/libaudiocomponentengine_vendor.so
 vendor/lib64/libaudiocomponentenginec.so
 vendor/lib64/libaudiocustparam_vendor.so
 vendor/lib64/libaudiodcrflt_vendor.so
-vendor/lib64/libaudiofmtconv.so
 vendor/lib64/libaudioloudc.so
 vendor/lib64/libaudioprimarydevicehalifclient.so
 vendor/lib64/libaudiotoolkit_vendor.so
@@ -483,7 +481,6 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 
 # Firmware
 vendor/firmware/BT_FW.cfg
-vendor/firmware/fm_cust.cfg
 vendor/firmware/gt1151_default_firmware2.img
 vendor/firmware/gt9886_cfg_6785v96.bin
 vendor/firmware/gt9886_cfg_6785v99.bin
@@ -505,8 +502,6 @@ vendor/firmware/gt9886_firmware_6885b0.bin
 vendor/firmware/gt9886_firmware_6885b1.bin
 vendor/firmware/gt9886_firmware_6885v01.bin
 vendor/firmware/gt9886_firmware_6893v01.bin
-vendor/firmware/mt6631_fm_v1_coeff.bin
-vendor/firmware/mt6631_fm_v1_patch.bin
 vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_mp.bin
 vendor/firmware/soc1_0_patch_mcu_1a_1_hdr.bin

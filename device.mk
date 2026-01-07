@@ -168,10 +168,6 @@ PRODUCT_COPY_FILES += \
     $(RECOVERY_TS_FW_PATH)/novatek_ts_mp.bin:recovery/root/vendor/firmware/novatek_ts_mp.bin \
     $(RECOVERY_TS_FW_PATH)/novatek_ts_mp_01.bin:recovery/root/vendor/firmware/novatek_ts_mp_01.bin
 
-# FM Radio
-PRODUCT_PACKAGES += \
-    FMRadio
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
