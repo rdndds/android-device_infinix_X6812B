@@ -10,18 +10,7 @@ cc_library_shared {
     vendor: true
 }
 
-cc_library_shared {
-    name: "libshim_trustonic",
-    srcs: ["libshim_trustonic.cpp"],
-    vendor: true,
-    shared_libs: [
-        "libkeymaster_messages",
-    ],
-    header_libs: [
-        "libhardware_headers",
-    ],
-    include_dirs: [ "system/keymaster/include" ],
-}
+// libshim_trustonic - REMOVED (crypto/keymaster support removed)
 
 cc_library_shared {
     name: "libshim_showlogo",

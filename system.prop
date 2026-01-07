@@ -58,8 +58,8 @@ vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 ro.telephony.sim.count=2
 
-# TEE
-ro.mtk_key_manager_support=1
+# TEE - REMOVED (crypto/key manager support disabled)
+# ro.mtk_key_manager_support=1
 
 # USB
 ro.sys.usb.mtp.whql.enable=0

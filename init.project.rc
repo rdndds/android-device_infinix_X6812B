@@ -1,5 +1,5 @@
 # MTK project .rc configure
-import /vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
+# import /vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc - REMOVED (crypto)
 
 on init
     mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
@@ -7,7 +7,7 @@ on init
 
 on post-fs-data
 mkdir /data/vendor/nfc 0770 nfc nfc
-mkdir /data/vendor/secure_element 0770 nfc nfc
+# mkdir /data/vendor/secure_element 0770 nfc nfc - REMOVED (crypto)
 
     chmod 0666 /sys/module/migt/parameters/mi_viptask
     restorecon /sys/module/migt/parameters/mi_viptask

@@ -123,18 +123,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
-# DRM
+# DRM - Keep clearkey only, remove Widevine
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
-PRODUCT_PACKAGES += \
-    libmockdrmcryptoplugin
-
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0.vendor \
-    android.hardware.drm@1.1.vendor \
-    android.hardware.drm@1.2.vendor \
-    android.hardware.drm@1.3.vendor
+# Removed: libmockdrmcryptoplugin and vendor DRM packages
 
 # Disable SF configstore
 PRODUCT_PACKAGES += \
@@ -168,10 +161,7 @@ PRODUCT_COPY_FILES += \
     $(RECOVERY_TS_FW_PATH)/novatek_ts_mp.bin:recovery/root/vendor/firmware/novatek_ts_mp.bin \
     $(RECOVERY_TS_FW_PATH)/novatek_ts_mp_01.bin:recovery/root/vendor/firmware/novatek_ts_mp_01.bin
 
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
+# Gatekeeper - REMOVED
 
 # GNSS
 PRODUCT_PACKAGES += \
@@ -216,15 +206,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
 
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0.vendor
-
-PRODUCT_PACKAGES += \
-    libkeymaster4.vendor \
-    libkeymaster4support.vendor \
-    libpuresoftkeymasterdevice.vendor \
-    libsoft_attestation_cert.vendor
+# Keymaster - REMOVED
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -386,10 +368,10 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libshim_audio \
-    libshim_trustonic \
     libshim_showlogo \
     libshim_vtservice \
     libpiex_shim
+    # libshim_trustonic - REMOVED (crypto)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -422,9 +404,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy.mt6768
 
-PRODUCT_PACKAGES += \
-    libkeystore-wifi-hidl \
-    libkeystore-engine-wifi-hidl
+# WiFi Keystore - REMOVED (crypto)
+# PRODUCT_PACKAGES += \
+#     libkeystore-wifi-hidl \
+#     libkeystore-engine-wifi-hidl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
@@ -455,11 +438,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml
 
-# Secure Element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0.vendor \
-    android.hardware.secure_element@1.1.vendor \
-    android.hardware.secure_element@1.2.vendor
+# Secure Element - REMOVED
 
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 30

@@ -58,21 +58,22 @@ ro.vendor.mtk_zsdhdr_support=1
 ro.vendor.mtk_slow_motion_support=1
 ro.vendor.mtk_camera_app_version=3
 
-# DRM
-drm.service.enabled=true
-ro.netflix.bsp_rev=MTK6768-19055-1
-ro.vendor.mtk_widevine_drm_l3_support=1
-ro.vendor.mtk_sec_video_path_support=1
+# DRM - REMOVED (Widevine support disabled)
+# drm.service.enabled=true
+# ro.netflix.bsp_rev=MTK6768-19055-1
+# ro.vendor.mtk_widevine_drm_l3_support=1
+# ro.vendor.mtk_sec_video_path_support=1
 
 # Data
 ro.vendor.mtk_f2fs_enable=1
 ro.vendor.mtk_fd_support=1
 ro.vendor.mtk_emmc_support=1
-ro.crypto.allow_encrypt_override=true
-ro.crypto.dm_default_key.options_format.version=2
-ro.crypto.volume.metadata.method=dm-default-key
-ro.crypto.volume.filenames_mode=aes-256-cts
-ro.crypto.volume.options=::v2
+# Crypto properties REMOVED (encryption disabled)
+# ro.crypto.allow_encrypt_override=true
+# ro.crypto.dm_default_key.options_format.version=2
+# ro.crypto.volume.metadata.method=dm-default-key
+# ro.crypto.volume.filenames_mode=aes-256-cts
+# ro.crypto.volume.options=::v2
 
 # Display
 ro.opengles.version=196610
@@ -209,12 +210,12 @@ debug.sf.enable_transaction_tracing=false
 debug.sf.enable_gl_backpressure=1
 debug.sf.predict_hwc_composition_strategy=0
 
-# TEE
-ro.vendor.mtk_tee_gp_support=1
-ro.hardware.kmsetkey=trustonic
-ro.hardware.gatekeeper=trustonic
-ro.hardware.paytrigger=trustonic
-ro.vendor.mtk_trustonic_tee_support=1
+# TEE - REMOVED (Trustonic crypto/encryption stack)
+# ro.vendor.mtk_tee_gp_support=1
+# ro.hardware.kmsetkey=trustonic
+# ro.hardware.gatekeeper=trustonic
+# ro.hardware.paytrigger=trustonic
+# ro.vendor.mtk_trustonic_tee_support=1
 
 # WiFi
 ro.vendor.wifi.sap.interface=ap0
