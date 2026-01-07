@@ -1,7 +1,3 @@
-# Fingerprint
-genfscon sysfs /devices/platform/11012000.spi2/spi_master/spi2/spi2.0/authen_fd                                                 u:object_r:sysfs_fingerprint:s0
-genfscon sysfs /devices/platform/fingerprint                                                                                    u:object_r:sysfs_fingerprint:s0
-
 # Graphics
 genfscon sysfs /devices/platform/13040000.mali                                                                                  u:object_r:sysfs_gpu:s0
 
