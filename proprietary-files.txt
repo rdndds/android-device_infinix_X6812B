@@ -522,12 +522,6 @@ vendor/firmware/wifi.cfg
 vendor/firmware/WIFI_RAM_CODE_soc1_0_1a_1.bin
 vendor/firmware/WMT_SOC.cfg
 
-# Fingerprint
-vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.mt6768.so
-
-# FM Radio
--system_ext/lib64/libfmjni.so:system/lib64/libfmjni.so
-
 # Gatekeeper
 vendor/lib/hw/libSoftGatekeeper.so
 vendor/lib64/hw/libSoftGatekeeper.so
@@ -1029,8 +1023,6 @@ vendor/lib64/libabfadp.so
 vendor/lib64/libacdk.so
 vendor/lib64/libaedv.so
 vendor/lib64/libbwc.so
-vendor/lib64/libc++_shared.so
-vendor/lib64/libc++_shared_vf.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcrypto-mdapp.so
 vendor/lib64/libcurl-md.so
